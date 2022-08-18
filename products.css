@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #282B30;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 1100px;
+    height: 600px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 30px;
+    word-break: break-all;
+}
+
+.container .imgBx {
+    position: relative;
+    border-radius: 30px 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    /* background-color: #282B30; */
+    background: linear-gradient(45deg, #282B30 20%, transparent 20%, transparent 80%, #282B30 80%),linear-gradient(135deg, #282B30 40%, #c7ccd5 40%, #c7ccd5 60%, #c7ccd5 60%, #282B30 60%) , linear-gradient(45deg, #282B30 20%, #c7ccd5 20%, #c7ccd5 80%, #282B30 80%);
+    background-size: 3em 3em;
+    background-color: #282B30;
+    opacity: 1;
+    /* background: #212121; */
+    transition: .3s linear;
+}
+
+
+.container .imgBx img {
+    position: relative;
+    width: 110%;
+    transform: rotate(-12deg);
+    left: -10px;
+    transition: .9s linear;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.poem-details{
+    word-break: break-all;
+    width: 70%;
+    height: 100%;  
+    padding: 0 50px;
+}
+
+.poems{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.poems1{
+    gap: 30px;
+}
+
+.poems2{
+    gap: 20px;
+}
+.second-part, .first-part p{
+    color: black;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+
+.rightt{
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.right1, .right2{
+    cursor: pointer;
+}
+
+.poem2, .poem3{
+    display: none;
+}
+
+.poem4, .poem5, .poem6 , .poem7 , .poem8, .poem9 , .poem10{display: none;}
+
+.link-yt{
+    margin: 0;
+    padding: 0;
+}
+
+.iconss{
+    display: flex;
+    flex-direction: column;
+}
+
+.listen{
+    font-weight: 800;
+}
+
+.yt-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+
+/* responsive */
+@media (max-width: 1080px) {
+    .container {
+        height: auto;
+    }
+    .container .imgBx {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container .imgBx img {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+    
+    .poems{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .poems1{
+        gap: 10px;
+    }
+    
+    .poems2{
+        gap: 10px;
+    }
+
+}
+
